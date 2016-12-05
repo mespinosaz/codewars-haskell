@@ -12,6 +12,7 @@ validISBN10 s
     where xpos = elemIndex 'X' s
           validValues = "X0123456789"
 
+toInt :: Char -> Integer
 toInt n
   | n == 'X' = 10
   | otherwise = read [n] :: Integer
